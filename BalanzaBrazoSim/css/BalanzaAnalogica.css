@@ -26,19 +26,20 @@ footer{
 footer img{
     border-radius:50%;
 }
-h1{
+h1,h2,h3{
     margin:0px;     /*Esta es la wea que genera (más bien borra) la barra en blanco arriba del header*/
 }
-h2{
-    margin:0px;
+h3{
+    font-size:18px;
 }
 hr{
     margin-top:0px;
     margin-bottom:20px;
 }
-h1,legend{
+h1,h3,legend{
     font-variant:small-caps;
 }
+
 
 /*El resto*/
 /*Balanza y plato*/
@@ -240,4 +241,17 @@ select{
 }
 label{
     font-size:13px;
+}
+#instrucciones{
+    position:absolute;
+    top:240px;
+    left:1020px;
+    width: 270px;
+}
+#instrucciones p{
+    font-size:12px;
+    text-align:justify;
+}
+#textoInst{
+    display:none;
 }

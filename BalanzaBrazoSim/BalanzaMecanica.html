@@ -77,16 +77,40 @@
                     <option value="40.8">Masa de prueba C</option>
                 </optgroup>
                 <optgroup label="Objetos">
-                    <option value="244">Botella de crema</option>
                     <option value="610">Avión</option>
                     <option value="26">Batería</option>
                     <option value="112">Bloque de madera</option>
-                    <option value="8.7">Botella</option>
+                    <option value="8.7">Botella de agua</option>
+                    <option value="244">Botella de crema</option>
+                    <option value="415">Cámara</option>
+                    <option value="175">Candado</option>
+                    <option value="150">Celular</option>
+                    <option value="419">Cilindro hueco</option>
+                    <option value="460">Cilindro sólido</option>
+                    <option value="348">Control de Xbox</option>
+                    <option value="362">Esfera sólida</option>
+                    <option value="235">Foco</option>
+                    <option value="305">Helado</option>
+                    <option value="13.6">Lata de aluminio vacía</option>
+                    <option value="252">Manzana</option>
+                    <option value="298">Micrófono</option>
+                    <option value="63">Reloj de muñeca</option>
+                    <option value="2">Resistencia</option>
+                    <!-- <option value="610">Yunque</option> -->
                 </optgroup>
              </select><br><br>
              <button type="button" onclick="ponerEnCero()">Llevar masas a cero</button><br>
              <button type="button" onclick="ponerEnMax()">Llevar masas a máximo</button>
         </fieldset>
+        <section id="instrucciones">
+            <h3 id="tituloInst" onclick="mostrarInst()">Instrucciones (clic para ver)</h3>
+            <div id="textoInst">
+                <p>Use el cuadro <i>Selección</i> para seleccionar una masa. Cada masa tiene un peso diferente, en gramos. La imagen sobre el plato de la balanza cambiará de acuerdo al objeto seleccionado.</p>
+                <p>Use los botones <img src="imgs/BotonMover.png" alt="botón" title="botón" width="24px"> para mover hacia adelante o atrás los indicadores de cada escala (valores en gramos).</p>
+                <p>Cuando la masa sumada de las tres escalas sea igual a la de la masa seleccionada, el marcador (flecha roja) señalará el cero. Si lo señalado es menor, el marcador se irá hacia arriba; si es mayor se irá hacia abajo; si se acerca a &#177;10g se acercará más a cero sin llegar a éste.</p>
+                <p>Esta balanza no puede medir valores decimales (0.1g). Si uno de los objetos (ver Masa de prueba C) tiene una masa en este rango, la balanza se acercará pero nunca indicará cero.</p>
+            </div>
+        </section>
     </main>
 
     <footer>

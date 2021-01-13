@@ -63,16 +63,44 @@ function updateObjeto(seleccion){
             pic = "imgs/PruebaB.png";break;
         case "Masa de prueba C":
             pic = "imgs/PruebaC.png";break;
-        case "Botella de crema":
-            pic = "imgs/CremaNivea.png";break;
         case "Avión":
             pic = "imgs/AvionPic.png";break;
         case "Batería":
             pic = "imgs/BatteryPic.png";break;
         case "Bloque de madera":
             pic = "imgs/BloqueDeMadera.png";break;
-        case "Botella":
+        case "Botella de agua":
             pic = "imgs/BotellaPlastico2.png";break;
+        case "Botella de crema":
+            pic = "imgs/CremaNivea.png";break;
+        case "Cámara":
+            pic = "imgs/CamaraPic.png";break;
+        case "Candado":
+            pic = "imgs/CandadoPic.png";break;
+        case "Celular":
+            pic = "imgs/CelularPic.png";break;
+        case "Cilindro hueco":
+            pic = "imgs/CilindroHueco.png";break;
+        case "Cilindro sólido":
+            pic = "imgs/CilindroPic.png";break;
+        case "Control de Xbox":
+            pic = "imgs/ControlXbox.png";break;
+        case "Esfera sólida":
+            pic = "imgs/Esfera.png";break;
+        case "Foco":
+            pic = "imgs/FocoPic.png";break;
+        case "Helado":
+            pic = "imgs/HeladoPng.png";break;
+        case "Lata de aluminio vacía":
+            pic = "imgs/LataAluminio.png";break;
+        case "Manzana":
+            pic = "imgs/ManzanaPic.png";break;
+        case "Micrófono":
+            pic = "imgs/MicrofonoPic.png";break;
+        case "Reloj de muñeca":
+            pic = "imgs/RelojDeMuneca.png";break;
+        case "Resistencia":
+            pic = "imgs/ResistenciaPic.png";break;
         default:
             pic = "imgs/DiamanteBlanco.png";break;
     }
@@ -99,6 +127,19 @@ function ponerEnMax(){
     $("#unMarker").css("left", vectorUno[vectorUno.length-1]);
     updateBalanza();
 }
+
+function mostrarInst(){
+    console.log($('#textoInst').css("display"));
+    if($('#textoInst').css("display") == "none"){
+        $('#textoInst').css("display","inline");
+        $('#tituloInst').text("Instrucciones");
+    }else{
+        $('#textoInst').css("display","none");
+        $('#tituloInst').text("Instrucciones (clic para ver)");
+    }
+}
+
+
 
 //-----------Funciones que controlan el movimiento----------------
 function moveRightDiez(){
