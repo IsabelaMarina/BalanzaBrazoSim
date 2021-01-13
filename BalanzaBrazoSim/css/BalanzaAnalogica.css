@@ -252,7 +252,7 @@ label{
     
 } */
 #textoInst{
-    display:inline;
+    display:none;
     font-size:12px;
     text-align:justify;
 }
