@@ -248,10 +248,11 @@ label{
     left:1020px;
     width: 270px;
 }
-#instrucciones p{
-    font-size:12px;
-    text-align:justify;
-}
+/* #instrucciones p{
+    
+} */
 #textoInst{
     display:inline;
+    font-size:12px;
+    text-align:justify;
 }
