@@ -10,7 +10,7 @@ header{
     background-color:white;
     padding-left:20px;
     color:#606060;
-    position:absolute;
+    position:fixed;
     height: 75px;
     width: 100%;
     overflow:hidden;
@@ -19,7 +19,7 @@ footer{
     background-color:rgb(100, 100, 100);
     color:white;
     text-align: right;
-    position:absolute;
+    position:fixed;     /*Esto es lo que pone la barra abajo, y no flotando por ahí*/
     bottom:0px;
     width:100%;
 }
